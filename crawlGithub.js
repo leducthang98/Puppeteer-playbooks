@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-let sampleUrl = 'https://github.com/anhthu127';
+let sampleUrl = 'https://github.com/trinhngockhang';
 
 const crawlFunctA = async (url) => {
     const browser = await puppeteer.launch({ headless: true });

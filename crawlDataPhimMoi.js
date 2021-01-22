@@ -6,7 +6,7 @@ const run = async () => {
 }
 
 const crawlPhimHanhDong = async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
     await page.goto('http://www.phimmoizz.net/the-loai/phim-hanh-dong/');
     let data = []
